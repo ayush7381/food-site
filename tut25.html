@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container{
+            height: 544px;
+            width: 100%;
+            border: 2px solid black;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            /* justify-content: center;
+            justify-content: space-between;
+            justify-content: space-evenly;
+            justify-content: space-around; */
+            /* align-items: center; */
+            /* align-items: flex-end; */
+            /* align-items: flex-start; */
+            /* align-items: stretch; */
+    
+        }
+        .item{
+
+            width: 200px;
+            height: 200px;
+
+            background-color: tomato;
+            border: 2px solid red;
+            margin: 10px;
+            padding: 3px;
+        }
+        #item1{
+            /* order: 2; */
+            flex-grow: 3;
+        }
+        #item2{
+                /* flex-shrink: 3; */
+                flex-basis: 160px;
+        }
+        #item3{
+            flex: 2 2 230px;
+        }
+        #item4{
+
+        }
+        #item5{
+
+        }
+    </style>
+</head>
+<body>
+    <div  class="container">
+        <d class="item" id="item1">table1</d>
+        <d class="item" id="item2">table2</d>
+        <d class="item" id="item3">table3</d>
+        <d class="item" id="item4">table4</d>
+        <d class="item" id="item5">table5</d>
+    </div>
+    
+</body>
+</html>
